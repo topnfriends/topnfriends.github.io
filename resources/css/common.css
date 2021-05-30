@@ -5,6 +5,18 @@ html, body {
     position: fixed;
 }
 
+.menu-box {
+    height: 70px;
+    line-height: 70px;
+    display: flex;
+    padding: 0 10px; 
+}
+
+.menu-box .item {
+    text-align: center;
+    flex: 1;
+}
+
 .side-content {
     display: flex;
     flex-direction: column;
@@ -14,11 +26,10 @@ html, body {
 }
 
 .side-content .title {
-    height: 50px;
-    padding: 0 10px;
+    text-indent: 20px;
+    font-weight: bold;
     line-height: 50px;
-    background-color: white;
-    color: gray;
+    font-size: 20px;
 }
 
 .side-content .side-bar {
@@ -539,4 +550,9 @@ html, body {
     display: flex;
     padding: 10px;
     cursor: pointer;
+}
+
+.event-box {
+    cursor: pointer !important;
+
 }
