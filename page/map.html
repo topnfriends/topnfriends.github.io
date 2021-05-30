@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="../resources/lib/map/lib/openlayers_v6.4.3/css/ol.css" />
+    <link rel="stylesheet" type="text/css" href="../resources/lib/map/css/ugmp_openlayers.css" />
 	<link rel="stylesheet" type="text/css" href="../resources/css/style.css" />
 	<link rel="stylesheet" type="text/css" href="../resources/css/common.css" />
 	<link rel="stylesheet" type="text/css" href="../resources/lib/semantic/semantic.min.css" />
@@ -9,16 +11,220 @@
 	<div class='hp100 flex'>
 		<!-- 메뉴화면 -->
 		<div class='side-content'>
+			<div class='about-box'>
+				<img src='../resources/images/me3.jpeg' style='width: 80px; height: 80px; border-radius: 50%;' />
+				<div class='flex-1'>
+					About me
+				</div>
+			</div>
 
+			<div style='padding: 10px; overflow-y: auto;'>
+				<div class="ui list">
+					<div class="item">
+						<i class="folder icon"></i>
+						<div class="content">
+							<div class="header">개발</div>
+							<div class="description"></div>
+							<div class="list">
+								<div class="item" style='margin-bottom: 20px;'>
+									<i class="file icon"></i>
+									<div class="content">
+							  			<div class="header">토지적성평가 검수 시스템</div>
+							  			<div class="description">Your site's theme</div>
+									</div>
+						  		</div>
+
+								<div class="item" style='margin-bottom: 20px;'>
+									<i class="folder icon"></i>
+									<div class="content">
+										<div class="header">기초조사 정보관리 시스템 고도화</div>
+										<div class="description">Your site's theme</div>
+										<div class="list" style='margin: 5px 0;'>
+											<div class="item" >
+												<i class="file icon"></i>
+												<div class="content">
+													<div class="header">GeoServer lib jar 구현</div>
+													<div class="description">Your site's theme</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="item" style='margin-bottom: 20px;'>
+									<i class="folder icon"></i>
+									<div class="content">
+										<div class="header">춘천시 도시재생지원센터 포털시스템</div>
+										<div class="description">Your site's theme</div>
+										<div class="list" style='margin: 5px 0'>
+											<div class="item" >
+												<i class="file icon"></i>
+												<div class="content">
+													<div class="header">리빙랩 컨텐츠 생성 템플릿 모듈 구현</div>
+													<div class="description">Your site's theme</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+
+								<div class="item" style='margin-bottom: 20px;'>
+									<i class="folder icon"></i>
+									<div class="content">
+										<div class="header">춘천시 도시재생 정보분석 플랫폼</div>
+										<div class="description">Your site's theme</div>
+										<div class="list" style='margin: 5px 0'>
+											<div class="item" >
+												<i class="file icon"></i>
+												<div class="content">
+													<div class="header">openlayers 6.5.0 기반의 모듈 구현
+
+													</div>
+													<div class="description">Your site's theme</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="item" style='margin-bottom: 20px;'>
+									<i class="folder icon"></i>
+									<div class="content">
+										<div class="header">기초조사 정보관리 시스템</div>
+										<div class="description">Your site's theme</div>
+										<div class="list" style='margin: 5px 0;'>
+											<div class="item" >
+												<i class="file icon"></i>
+												<div class="content">
+													<div class="header">시나리오 모델링을 위한 SVG기반의 모듈 구현</div>
+													<div class="description">Your site's theme</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="item" style='margin-bottom: 20px;'>
+									<i class="file icon"></i>
+									<div class="content">
+										<div class="header">농산어촌지역개발 공간정보시스템</div>
+										<div class="description">Your site's theme</div>
+									</div>
+								</div>
+
+							</div>
+					  	</div>
+					</div>
+
+					<div style='height: 50px;'></div>
+					
+					<div class="item">
+						<i class="folder icon"></i>
+						<div class="content">
+							<div class="header">DB 구축</div>
+							<div class="description"></div>
+							<div class="list">
+						  		<div class="item" style='margin-bottom: 20px;'>
+									<i class="file icon"></i>
+									<div class="content">
+							  			<div class="header">도로명주소 위치정확도 개선사업</div>
+							  			<div class="description">Your site's theme</div>
+									</div>
+						  		</div>
+
+								  <div class="item" style='margin-bottom: 20px;'>
+									<i class="file icon"></i>
+									<div class="content">
+							  			<div class="header">행정공간정보체계 구축 시스템</div>
+							  			<div class="description">Your site's theme</div>
+									</div>
+						  		</div>
+								
+								  <div class="item" style='margin-bottom: 20px;'>
+									<i class="file icon"></i>
+									<div class="content">
+							  			<div class="header">부산광역시 수치지형도 시스템</div>
+							  			<div class="description">Your site's theme</div>
+									</div>
+						  		</div>
+
+								  <div class="item" style='margin-bottom: 20px;'>
+									<i class="file icon"></i>
+									<div class="content">
+							  			<div class="header">통계청 센서스 지도 DB구축</div>
+							  			<div class="description">Your site's theme</div>
+									</div>
+						  		</div>
+
+								  <div class="item" style='margin-bottom: 20px;'>
+									<i class="file icon"></i>
+									<div class="content">
+							  			<div class="header">광산지리정보시스템</div>
+							  			<div class="description">Your site's theme</div>
+									</div>
+						  		</div>
+
+							</div>
+					  	</div>
+					</div>
+
+				</div>
+			</div>
+			
 		</div>
 
 		<!-- 지도화면 -->
 		<div class='content-container'>
+			<!-- 로드뷰 -->
+			<div class='road-view-close'>
+				<i class='close icon'></i>
+			</div>
+			<div id='roadView' class='road-view'>
+			</div>
+
 			<div id="map" class='user-map'></div>
         	<div id="baseMap" class='base-map'></div>
 		</div>
 
+
+		<!-- 도구 -->
+		<div>
+            <div style='top: 50px; position: absolute; width: 30px; z-index: 200; left: auto; right: 12px;'>
+                <div class='control-button map-options-btn' id='mapOptions'>
+                    <i class="clone outline icon btn-icon"></i>
+                </div>
+                <div class='control-button map-roadview-btn' style='margin-top: 5px;' id='mapRoadView'>
+                    <i class="map outline icon btn-icon"></i>
+                </div>
+            </div>
+		</div>
+
 	</div>
+
+
+	<!-- 모달팝업 -->
+
+	<!-- 자기소개 -->
+	<div class="ui modal">
+		<i class="close icon"></i>
+		<div class="header">제목</div>
+		<div class="image content">
+			<div class="ui medium image">
+				<img src="../resources/images/me.png">
+		  	</div>
+		  	<div class="description">
+				<div class="ui header"></div>
+				<p></p>
+			</div>
+			</div>
+			<div class="actions">
+		  		<div class="ui positive right labeled icon button">
+					Yep, that's me
+					<i class="checkmark icon"></i>
+		  		</div>
+			</div>
+	  </div>
 </body>
 
 <script type="text/javascript"
@@ -30,6 +236,37 @@
 <script>
 	var ugmp = new uitgis.ugmp();
 	var mapServer = 'http://211.171.200.55:7880/geoserver';
+
+	var project_list = [
+		{ 'upbss': 'sgg' }
+		, { 'landlee': 'bjd_emd' }
+		, { 'farm': '' }
+	];
+
+	var home = {
+		'center': [207768.96492187498, 422704.9951171875],
+		'level': 11
+	}
+
+
+	// 프로젝트 목록
+	// 광산지리정보시스템
+	// 통계청 센서스 지도 DB구축
+	// 부산광역시 수치지형도 시스템
+	// 행정공간정보체계 구축시스템
+	// 도로명주소 위치정확도 개선사업 
+	//DB구축
+
+
+
+	// 농산어촌지역개발 공간정보시스템
+	// 기초조사 정보관리 시스템
+	// 춘천시 도시재생 정보분석 플랫폼
+	// 춘천시 도시재생지원센터 포털시스템
+	// 기초조사 정보관리 시스템 고도화 ( 작업중 )
+	// 토지적성평가 검수시스템
+	// 지오그라운드 (작업중)
+
 
 	$( function () {
 		ugmp.userMap = new uitgis.userMap( {
@@ -58,11 +295,55 @@
 
 		ugmp.userMap.addWMSLayer( wmsLayer );
 
+		bindEvent();
 	} );
 
 
 	var bindEvent = function () {
+		$( document ).on( 'click', '.about-box', function () {
+			$('.ui.modal').modal('show');
 
+			var _view = ugmp.userMap.getMap().getView();
+			_view.setCenter( home.center );
+			_view.setZoom( home.level );
+
+		} )
+		;
+
+		var zoomControl = ( function() {
+            var button = document.createElement('button');
+            button.innerHTML = ugmp.userMap.getMap().getView().getZoom();
+            button.id = "zoomLv";
+            button.style.width = '25px';
+            button.style.height = '25px';
+            button.style.fontSize = '13px';
+
+            var element = document.createElement("div");
+            element.className = "control-layer ol-unselectable ol-control";
+
+            element.appendChild( button );
+            return element;
+        })();
+
+		ugmp.userMap.getMap().addControl( new ol.control.Control( {
+            element : ( function() {
+                var button = document.createElement( 'button' );
+                button.innerHTML = ugmp.userMap.getMap().getView().getZoom();
+                button.id = 'zoomLv';
+                button.classList.add( 'zoom-lv' );
+
+                var element = document.createElement( 'div' );
+                element.className = 'ol-zoom ol-unselectable ol-control zoom-lv-box';
+                element.appendChild( button );
+
+                return element;
+            } )()
+        } ) );
+
+		ugmp.userMap.getMap().on( 'moveend', function( e ) {
+            var _zoomLv = ugmp.userMap.getMap().getView().getZoom();
+            $( '.zoom-lv' ).text( _zoomLv );
+        } );
 	}
 </script>
 </html>
