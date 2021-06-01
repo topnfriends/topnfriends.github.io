@@ -554,5 +554,19 @@ html, body {
 
 .event-box {
     cursor: pointer !important;
-
 }
+
+.img-box {
+    height: 280px;
+    overflow-x: auto;
+    display: flex;
+}
+
+.img-box .item {
+    width: 250px;
+    height: 250px;
+    margin: 0 10px;
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+}
+
