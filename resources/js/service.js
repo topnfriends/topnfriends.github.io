@@ -37,9 +37,18 @@ var projectList = [
 			}, {
 				filename: 'manager.png',
 				description: '관리자 레이어 발행'
+			}, {
+				filename: 'simulation.png',
+				description: '토지적성평가 시뮬레이션 검토'
+			}, {
+				filename: 'manager.png',
+				description: '관리자 레이어 발행'
+			}, {
+				filename: 'simulation.png',
+				description: '토지적성평가 시뮬레이션 검토'
 			}
 		],
-		skli: 'spring, spring security,  java, javascript, postgresql, postgis, openlayers, geoserver, thymeleaf, jquery',
+		skil: 'spring, spring security, java, javascript, postgresql, postgis, openlayers, geoserver, thymeleaf, jquery',
 		description: '기존 도면으로 지자체 담당자로부터 데이터 검수 받는 방식을 시스템화하여 검수 데이터구축 후 출력이 아닌 시스템에 공간데이터를 탑재하여 웹상에서 검수 및 데이터 수정을 진행',
 		part: '세팅부터 구현까지'
 	}, {
