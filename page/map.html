@@ -344,7 +344,7 @@
 
 			if ( project.files.length > 0 ) {
 				_.forEach( project.files, function ( _file ) {
-					$target.append( '<img src="../resources/images/project/' + _id + '/' + _file.filename + '" class="item" />' );
+					$target.append( '<img src="../assets/images/project/' + _id + '/' + _file.filename + '" class="item" />' );
 				} );
 			};		
 
@@ -353,7 +353,7 @@
 
 			var sklis = project.skil.split( ',' );
 			_.forEach( sklis, function ( _skil ) {
-				var tag =  '<img class="item" src="../resources/images/icon/' + _skil.trim() + '.png" alt="' + _skil.trim() + '" />';
+				var tag =  '<img class="item" src="../assets/images/icon/' + _skil.trim() + '.png" alt="' + _skil.trim() + '" />';
 				$skilBox.append( tag );
 			} );
 
