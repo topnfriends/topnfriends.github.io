@@ -305,7 +305,7 @@
             useAltKey: false,
             center: [264088.295, 514743.94921875],
             zoom: 3,
-            loading: '../resources/images/loading.gif'
+            loading: '../assets/images/loading.gif'
         } );
 
 		ugmp.baseMap = new uitgis.baseMap( {
@@ -353,7 +353,7 @@
 
 			var sklis = project.skil.split( ',' );
 			_.forEach( sklis, function ( _skil ) {
-				var tag =  '<img class="item" src="../assets/images/icon/' + _skil.trim() + '.png" alt="' + _skil.trim() + '" />';
+				var tag =  '<img class="item" src="../assets/images/icons/' + _skil.trim() + '.png" alt="' + _skil.trim() + '" />';
 				$skilBox.append( tag );
 			} );
 
