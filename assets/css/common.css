@@ -561,6 +561,7 @@ html, body {
     overflow-x: auto;
     display: flex;
     margin: 10px 0 20px 0;
+    position: relative;
 }
 
 .img-box .item {
@@ -569,6 +570,7 @@ html, body {
     margin: 0 10px;
     border: 1px solid #cdcdcd;
     border-radius: 10px;
+    display: inline-block;
 }
 
 .skil-box {

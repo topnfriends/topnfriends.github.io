@@ -48,7 +48,7 @@ var projectList = [
 				description: '토지적성평가 시뮬레이션 검토'
 			}
 		],
-		skil: 'spring, security, java, javascript, postgresql, postgis, openlayers, geoserver, thymeleaf, jquery',
+		skil: 'spring, security, java, javascript, openlayers, geoserver, thymeleaf, jquery, postgresql, postgis',
 		description: '- 도면출력 후 지자체 담당자로부터 데이터 검수 받는 기존의 방식을 시스템화하여 검수 데이터구축 후 출력이 아닌 시스템에 공간데이터를 탑재하여 웹상에서 검수 및 데이터 수정을 진행',
 		part: [
 			'openlayer를 좀 더 쉽게 활용할 수 있는 라이브러리 구현',
@@ -58,9 +58,14 @@ var projectList = [
 		id: 'upbss_new',
 		layer: '',
 		files: [],
-		skil: '',
-		description: '',
-		part: ''
+		skil: 'spring, security, java, javascript, openlayers, geoserver, vue, postgresql, postgis',
+		description: '- 지자체 도시과 담당자의 업무시스템으로써 지자체의 정보를 시각화 하고, 실시간 데이터 분석을 통해 지도상에 표출함으로써 데이터의 분포도 및 상세정보를 표출하고, 기존의 기초조사 시스템과는 달리 사용자의 참여도를 높여 다양한 데이터 분석이 가능',
+		part: [
+			'분석할 데이터의 모델을 웹상에서 분석프로세스를 생성하는 라이브러리 및 화면 구현' ,
+			'Geoserver(opensource) 기능 모듈화(jar)',
+			'분석프로세스의 데이터를 분석하여 클라이언트에 전달',
+			'편입필지 연산'
+		]
 	}, {
 		id: 'portal',
 		layer: '',
@@ -71,9 +76,9 @@ var projectList = [
 			}
 		],
 		link: '',
-		skil: '',
+		skil: 'spring, security, java, javascript, openlayers, geoserver, thymeleaf, jquery, postgresql, postgis, babel, webpack',
 		description: '',
-		part: ''
+		part: []
 	}, {
 		id: 'platform',
 		layer: '',
