@@ -18,7 +18,7 @@
 
 var projectList = [
 	{
-		id: 'GeoSolution',
+		id: 'geoSolution',
 		layer: '',
 		files: [],
 		skil: '',
@@ -48,9 +48,12 @@ var projectList = [
 				description: '토지적성평가 시뮬레이션 검토'
 			}
 		],
-		skil: 'spring, spring security, java, javascript, postgresql, postgis, openlayers, geoserver, thymeleaf, jquery',
-		description: '기존 도면으로 지자체 담당자로부터 데이터 검수 받는 방식을 시스템화하여 검수 데이터구축 후 출력이 아닌 시스템에 공간데이터를 탑재하여 웹상에서 검수 및 데이터 수정을 진행',
-		part: '세팅부터 구현까지'
+		skil: 'spring, security, java, javascript, postgresql, postgis, openlayers, geoserver, thymeleaf, jquery',
+		description: '- 도면출력 후 지자체 담당자로부터 데이터 검수 받는 기존의 방식을 시스템화하여 검수 데이터구축 후 출력이 아닌 시스템에 공간데이터를 탑재하여 웹상에서 검수 및 데이터 수정을 진행',
+		part: [
+			'openlayer를 좀 더 쉽게 활용할 수 있는 라이브러리 구현',
+			'검수 데이터, 시각화 데이터를 지도에 표출'
+		]
 	}, {
 		id: 'upbss_new',
 		layer: '',

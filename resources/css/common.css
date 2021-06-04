@@ -557,16 +557,27 @@ html, body {
 }
 
 .img-box {
-    height: 280px;
+    height: 270px;
     overflow-x: auto;
     display: flex;
+    margin: 10px 0 20px 0;
 }
 
 .img-box .item {
-    width: 250px;
-    height: 250px;
+    width: 250px !important;
+    height: 250px !important;
     margin: 0 10px;
     border: 1px solid #cdcdcd;
     border-radius: 10px;
 }
 
+.skil-box {
+    display: flex;
+    margin: 10px 0 20px 0;
+}
+
+.skil-box .item {
+    width: 50px !important;
+    height: 50px !important;
+    margin: 0 5px;
+}
