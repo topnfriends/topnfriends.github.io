@@ -7,6 +7,22 @@
 	<link rel="stylesheet" type="text/css" href="../assets/css/common.css" />
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="../assets/lib/semantic/semantic.min.css" />
+
+	<style>
+		.control-button  i {
+            width: 100% !important;
+            height: 100% !important;
+            color: white;
+            pointer-events: none;
+        }
+        
+        .btn-box i {
+            width: 100% !important;
+            height: 100% !important;
+            color: white;
+            pointer-events: none;
+        }
+	</style>
 </head>
 <body>
 	<div class='menu-box'>
@@ -46,7 +62,7 @@
 								<div class="item " style='margin-bottom: 20px;'>
 									<i class="file icon"></i>
 									<div class="content">
-							  			<div class="header event-box" id='geoSolution'>geoSolution (현재 구현중)</div>
+							  			<div class="header event-box" id='geoSolution'>geoSolution (개발중)</div>
 									</div>
 						  		</div>
 
@@ -58,79 +74,30 @@
 						  		</div>
 
 								<div class="item" style='margin-bottom: 20px;'>
-									<i class="folder icon"></i>
+									<i class="file icon"></i>
 									<div class="content">
 										<div class="header event-box" id='upbss_new'>기초조사 정보관리 시스템 고도화</div>
-										<div class="list" style='margin-top: 5px'>
-											<div class="item" >
-												<i class="file icon"></i>
-												<div class="content">
-													<div class="header">GeoServer lib jar 구현</div>
-												</div>
-											</div>
-										</div>
 									</div>
 								</div>
 
-
 								<div class="item" style='margin-bottom: 20px;'>
-									<i class="folder icon"></i>
+									<i class="file icon"></i>
 									<div class="content">
 										<div class="header event-box" id='portal'>도시재생지원센터 포털시스템(춘천시/진주시)</div>
-										<div class="list" style='margin-top: px'>
-											<div class="item" >
-												<i class="file icon"></i>
-												<div class="content">
-													<div class="header" style='margin-bottom: 5px;'>리빙랩 관리자 페이지</div>
-												</div>
-											</div>
-											
-											<div class="item" style='margin-top: 5px;'>
-												<i class="file icon"></i>
-												<div class="content">
-													<div class="header" style='margin-bottom: 5px;'>리빙랩 사용자 페이지</div>
-												</div>
-											</div>
-											
-											<div class="item" style='margin-top: 5px;'>
-												<i class="file icon"></i>
-												<div class="content">
-													<div class="header">리빙랩 컨텐츠 생성 템플릿 js모듈 구현</div>
-												</div>
-											</div>
-										</div>
 									</div>
 								</div>
-								
 
 								<div class="item" style='margin-bottom: 20px;'>
-									<i class="folder icon"></i>
+									<i class="file icon"></i>
 									<div class="content">
 										<div class="header event-box" id='platform'>춘천시 도시재생 정보분석 플랫폼</div>
-										<div class="list" style='margin-top: 5px'>
-											<div class="item" >
-												<i class="file icon"></i>
-												<div class="content">
-													<div class="header">openlayers 6.5.0 기반의 모듈 구현
-													</div>
-												</div>
-											</div>
-										</div>
 									</div>
 								</div>
 
 								<div class="item" style='margin-bottom: 20px;'>
-									<i class="folder icon"></i>
+									<i class="file icon"></i>
 									<div class="content">
 										<div class="header event-box" id='upbss'>기초조사 정보관리 시스템</div>
-										<div class="list" style='margin-top: 5px'>
-											<div class="item" >
-												<i class="file icon"></i>
-												<div class="content">
-													<div class="header">시나리오 모델링을 위한 SVG기반의 모듈 구현</div>
-												</div>
-											</div>
-										</div>
 									</div>
 								</div>
 
@@ -221,6 +188,26 @@
                     <i class="map outline icon btn-icon"></i>
                 </div>
             </div>
+
+			<div id='mapOptionContainer' class='map-container'>
+                <p>지도기능</p>
+                <div class='map-style-list' style='border-bottom: 1px solid #e7e7e7;'>
+                    <div class='map-select' id='normal'>
+                        <img src='../assets/images/icons/daum_normal.jpeg'/>
+                        <div>일반</div>
+                    </div>
+
+                    <div class='map-select' id='satellite'>
+                        <img src='../assets/images/icons/daum_hybrid.jpeg'/>
+                        <div>위성</div>
+                    </div>
+
+                    <div class='map-select' id='hybrid'>
+                        <img src='../assets/images/icons/daum_hybrid.jpeg'/>
+                        <div>하이브리드</div>
+                    </div>
+                </div>
+			</div>
 		</div>
 
 	</div>
@@ -231,7 +218,7 @@
 	<!-- 자기소개 -->
 	<div class="ui modal profile">
 		<i class="close icon"></i>
-		<div class="header">제목</div>
+		<div class="header">THE BEST IS YET TO COME</div>
 		<div class="image content">
 			<div class="ui medium image">
 				<img src="../assets/images/me.png" style='border-radius: 50%;;'>
@@ -239,6 +226,17 @@
 		  	<div class="description">
 				<div class="ui header">instargram</div>
 				<a href='https://www.instagram.com/topnfriends/'>https://www.instagram.com/topnfriends</a>
+
+				<div style='margin-top: 50px;'></div>
+				<p>업데이트 예정 내용</p>
+				<ul>
+					<li>다음 로드뷰</li>
+					<li>다음 지형도 api 연동</li>
+					<li>다음 주소 검색</li>
+					<li>geoserver 레이어 추가</li>
+					<li>지도 컨트롤 도구</li>
+				</ul>
+
 			</div>
 		</div>
 		<div class="actions">
@@ -262,7 +260,7 @@
 
 			<div style='margin: 30px 0'>
 				<div style='font-weight: bold; color: gray;'>프로젝트 소개</div>
-				<div class='project-description' style='margin-top: 10px; text-indent: 20px; color: #8b8b8b;'></div>
+				<div class='project-description' style='margin-top: 10px; text-indent: 5px; padding: 0 10px; color: #8b8b8b;'></div>
 			</div>
 
 			<div style='margin: 30px 0'>
@@ -298,7 +296,6 @@
 		'level': 11
 	}
 
-
 	$( function () {
 		ugmp.userMap = new uitgis.userMap( {
             target: 'map',
@@ -333,6 +330,22 @@
 	var bindEvent = function () {
 		$( document ).on( 'click', '.about-box', function () {
 			$( '.profile' ).modal( 'show' );
+		} )
+		.on( 'click', '.img-box .item', function ( e ) {
+			popup( e.target.src );
+		} )
+		.on( 'click', '.control-button', function( e ) {
+            var type = e.target.id;
+
+            switch( type ) {
+                case 'mapOptions':
+                    map.options.toggle( e.target );
+                    break;
+					
+				case 'mapRoadView':
+                    map.roadView.toggle( e.target );
+                    break;
+			}
 		} )
 		.on( 'click', '.event-box', function ( e ) {
 			var _id = e.target.id;
